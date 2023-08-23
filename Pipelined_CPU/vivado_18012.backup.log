@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 23 09:47:35 2023
+# Process ID: 18012
+# Current directory: C:/Users/86178/Desktop/project/pipelined_CPU/Pipelined_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16460 C:\Users\86178\Desktop\project\pipelined_CPU\Pipelined_CPU\Pipelined_CPU.xpr
+# Log file: C:/Users/86178/Desktop/project/pipelined_CPU/Pipelined_CPU/vivado.log
+# Journal file: C:/Users/86178/Desktop/project/pipelined_CPU/Pipelined_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86178/Desktop/project/pipelined_CPU/Pipelined_CPU/Pipelined_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 919.840 ; gain = 275.145
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 10:36:48 2023...
