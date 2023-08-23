@@ -25,7 +25,7 @@ module MUX_REGSRC(
     input wire[31:0]                  mux_in_0, 
     input wire[31:0]                  mux_in_1, 
     input wire[31:0]                  mux_in_2, 
-    input wire[31:0]                  mux_in_3, 
+    input wire[31:0]                  mux_in_3,  //pc_jmp_dst
 
     output reg[31:0]                  mux_out   
     );
@@ -37,8 +37,8 @@ module MUX_REGSRC(
                 mux_out <= mux_in_1;
             `REG_SRC_IMM:
                 mux_out <= mux_in_2;
-            `REG_SRC_NPC:
-                mux_out <= mux_in_3;    // ?? 有问题
+            `REG_SRC_PC_JMP:
+                mux_out <= mux_in_3;    
             default:
                 mux_out <= mux_in_0;
         endcase
