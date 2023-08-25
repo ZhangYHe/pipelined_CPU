@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/86178/Desktop/project/pipelined_CPU/Pipelined_CPU/Pipelined_CPU.xpr">
+<Project Version="7" Minor="44" Path="D:/GitRepo/pipelined_CPU/Pipelined_CPU/Pipelined_CPU.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="da6581865cd1494fbc01c17e07abfc07"/>
@@ -103,6 +103,14 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/REG_IF_ID.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/R_MEM_WB.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
