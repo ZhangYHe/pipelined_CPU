@@ -11,7 +11,7 @@
 
 // NPCOp Control Signals
 `define NPC_LENGTH   3          // Length of NPCOp
-`define NPCP_DEFAULT  3'b000     // NPCOp default value
+`define NPCP_DEFAULT  3'b000    // NPCOp default value
 `define NPC_NEXT     3'b001     // Next instruction: {PC + 4}
 `define NPC_JUMP     3'b010     // Next instruction: {PC[31:28], instr_index, 2'b00}
 `define NPC_OFFSET   3'b011     // Next instruction: {PC + 4 + offset}
