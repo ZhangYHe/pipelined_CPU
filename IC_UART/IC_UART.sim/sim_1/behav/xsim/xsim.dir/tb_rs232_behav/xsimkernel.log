@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_rs232_behav/xsimk.exe -simmode gui -wdb tb_rs232_behav.wdb -simrunnum 0 -socket 49670
+Design successfully loaded
+Design Loading Memory Usage: 6092 KB (Peak: 6092 KB)
+Design Loading CPU Usage: 0 ms
