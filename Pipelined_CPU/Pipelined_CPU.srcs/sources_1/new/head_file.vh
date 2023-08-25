@@ -21,3 +21,4 @@
 `define REG_WRITE_DISABLE   1'b0      
 
 `define LW_ENABLE     1'b0
+
