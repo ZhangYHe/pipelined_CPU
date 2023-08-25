@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/rs232.v,1692964856,verilog,,D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/uart_rx.v,,rs232,,,,,,,,
+D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/tb_rs232.v,1692964909,verilog,,,,tb_rs232,,,,,,,,
+D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/uart_rx.v,1692964718,verilog,,D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/uart_tx.v,,uart_rx,,,,,,,,
+D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/uart_tx.v,1692964775,verilog,,D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.srcs/sources_1/new/tb_rs232.v,,uart_tx,,,,,,,,
