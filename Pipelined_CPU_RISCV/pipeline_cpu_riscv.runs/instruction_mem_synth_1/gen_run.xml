@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="instruction_mem_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1692944374">
+<GenRun Id="instruction_mem_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1693036762">
   <File Type="PA-TCL" Name="instruction_mem.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="instruction_mem_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="instruction_mem_reports.tcl"/>
   <File Type="RDS-RDS" Name="instruction_mem.vds"/>
   <File Type="RDS-UTIL" Name="instruction_mem_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="instruction_mem_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="instruction_mem.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="instruction_mem_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="instruction_mem_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/instruction_mem">
     <File Path="$PSRCDIR/sources_1/ip/instruction_mem/instruction_mem.xci">
       <FileInfo>

@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug 26 15:29:52 2023
+# Process ID: 24252
+# Current directory: D:/Pipelined_CPU_RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24328 D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
+# Log file: D:/Pipelined_CPU_RISCV/vivado.log
+# Journal file: D:/Pipelined_CPU_RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_1' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'dist_mem_gen_1' do not match.
+WARNING: [IP_Flow 19-2162] IP 'instruction_mem' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'instruction_mem' do not match.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:29]
+ERROR: [VRFC 10-2865] module 'testbench' ignored due to previous errors [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:29]
+ERROR: [VRFC 10-2865] module 'testbench' ignored due to previous errors [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ins_d' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Imm_gen
+Compiling module xil_defaultlib.ALU_mux
+Compiling module xil_defaultlib.sr1_mux
+Compiling module xil_defaultlib.sr2_mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.RF_mux
+Compiling module xil_defaultlib.PC_mux
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX_ME
+Compiling module xil_defaultlib.ME_WB
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Forward_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 927.984 ; gain = 46.375
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.srcs\sources_1\new\CPU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [Vivado 12-4144] IP run instruction_mem_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+synth_design -rtl -part xc7k70tfbv676-1 -name rtl_1
+Command: synth_design -rtl -part xc7k70tfbv676-1 -name rtl_1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_1' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'dist_mem_gen_1' do not match.
+Top: CPU
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1362.352 ; gain = 226.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [D:/Pipelined_CPU_RISCV/.Xil/Vivado-24252-LAPTOP-ZMX/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (2#1) [D:/Pipelined_CPU_RISCV/.Xil/Vivado-24252-LAPTOP-ZMX/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (3#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Imm_gen' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_gen' (6#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_mux' (7#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sr1_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'sr1_mux' (8#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sr2_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sr2_mux' (9#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (11#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'RF_mux' (12#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_mux' (13#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (14#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (15#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_ME' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_ME' (16#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ME_WB' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:23]
+WARNING: [Synth 8-3848] Net WB_rf_d2 in module/entity ME_WB does not have driver. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ME_WB' (17#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Unit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Unit' (18#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Unit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Unit' (19#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v:23]
+WARNING: [Synth 8-3848] Net ins_data in module/entity CPU does not have driver. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (20#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:24]
+WARNING: [Synth 8-3331] design Forward_Unit has unconnected port ME_regS[1]
+WARNING: [Synth 8-3331] design Forward_Unit has unconnected port ME_regS[0]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[31]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[30]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[29]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[28]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[27]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[26]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[25]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[24]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[23]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[22]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[21]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[20]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[19]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[18]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[17]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[16]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[15]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[14]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[13]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[12]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[11]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[10]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[9]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[8]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[7]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[6]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[5]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[4]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[3]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[2]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[1]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[0]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[31]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[30]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[29]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[28]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[27]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[26]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[25]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[24]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[23]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[22]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[21]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[20]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[19]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[18]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[17]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[16]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[15]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[14]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[13]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[12]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[11]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[10]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[9]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[8]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[7]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[6]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[5]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[4]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[3]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[2]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[1]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[0]
+WARNING: [Synth 8-3331] design ID_EX has unconnected port rst
+WARNING: [Synth 8-3331] design ID_EX has unconnected port halt
+WARNING: [Synth 8-3331] design IF_ID has unconnected port rst
+WARNING: [Synth 8-3331] design DataMem has unconnected port rst
+WARNING: [Synth 8-3331] design PC has unconnected port br
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1418.496 ; gain = 282.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1439.121 ; gain = 302.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1439.121 ; gain = 302.996
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1460.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1569.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1618.723 ; gain = 482.598
+55 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1618.723 ; gain = 683.473
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  rst]]
+set_property package_pin "" [get_ports [list  rst]]
+reset_run synth_1 -prev_step 
+create_run synth_3 -flow {Vivado Synthesis 2019}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a100tcsg324-1
+launch_runs synth_3 -jobs 8
+[Sat Aug 26 15:51:12 2023] Launched synth_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_3/runme.log
+reset_run instruction_mem_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1
+
+save_constraints -force
+launch_runs synth_1 -jobs 8
+WARNING: [Project 1-577] IP run instruction_mem_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+
+WARNING: [Project 1-576] IP 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci' in run instruction_mem_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Sat Aug 26 15:51:29 2023] Launched instruction_mem_synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/runme.log
+[Sat Aug 26 15:51:29 2023] Launched synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1670.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1670.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+set_property package_pin "" [get_ports [list  clk]]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 15:53:16 2023...

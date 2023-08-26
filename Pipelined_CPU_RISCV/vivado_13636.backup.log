@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug 26 15:24:35 2023
+# Process ID: 13636
+# Current directory: D:/Pipelined_CPU_RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23148 D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
+# Log file: D:/Pipelined_CPU_RISCV/vivado.log
+# Journal file: D:/Pipelined_CPU_RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_1' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'dist_mem_gen_1' do not match.
+WARNING: [IP_Flow 19-2162] IP 'instruction_mem' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'instruction_mem' do not match.
+update_compile_order -fileset sources_1
+set_property top CPU [current_fileset]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v] -no_script -reset -force -quiet
+remove_files  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v
+file mkdir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:29]
+ERROR: [VRFC 10-2865] module 'testbench' ignored due to previous errors [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 15:29:47 2023...

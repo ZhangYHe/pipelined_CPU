@@ -24,9 +24,11 @@
 module  CPU (
   input clk, 
   input rst,
-            
-  input [31:0] io_din
-
+  output [3:0] data1,
+  output [3:0] data2,
+  output [3:0] data3,
+  output [3:0] data4,
+  output [3:0] data5
 );
 
 //PC
@@ -144,7 +146,7 @@ sr2_mux s2m(rs2_f, EX_rd2, ME_res, rf_wd, data_2);
 
 
 ALU alu(EX_ALUop, alu_d1, alu_d2, zero, less, res);
-DataMem dm(clk, rst, dm_we, ME_res[9:2], ME_rfd, m_rd1);    //ME_res[9:2]改为ME_res[9:0]
+DataMem dm(clk, rst, dm_we, ME_res[9:2], ME_rfd, m_rd1,data1,data2,data3,data4,data5);    //ME_res[9:2]改为ME_res[9:0]
 //DataMem_mux dm_mux(WB_res[10], WB_dm_rd1, io_din, dm_out);
 RF_mux rf_m(WB_regS, WB_PC4, WB_dm_rd1, WB_res, rf_wd);
 PC_mux pcm(EX_PC, EX_imm, PCout, br, pcimm, PC4, PC);

@@ -1,0 +1,756 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1 -directive AreaOptimized_high -control_set_opt_threshold 1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+
+INFO: [IP_Flow 19-2162] IP 'instruction_mem' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'instruction_mem' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13564 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 861.238 ; gain = 234.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/.Xil/Vivado-15752-LAPTOP-ZMX/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (2#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/.Xil/Vivado-15752-LAPTOP-ZMX/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (3#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Imm_gen' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_gen' (6#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_mux' (7#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sr1_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'sr1_mux' (8#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sr2_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sr2_mux' (9#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (11#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'RF_mux' (12#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_mux' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_mux' (13#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (14#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (15#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_ME' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_ME' (16#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ME_WB' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:23]
+WARNING: [Synth 8-3848] Net WB_rf_d2 in module/entity ME_WB does not have driver. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ME_WB' (17#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Unit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Unit' (18#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Unit' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Unit' (19#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v:23]
+WARNING: [Synth 8-3848] Net ins_data in module/entity CPU does not have driver. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (20#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:24]
+WARNING: [Synth 8-689] width (1) of port connection 'data1' does not match port width (4) of module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-689] width (1) of port connection 'data2' does not match port width (4) of module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-689] width (1) of port connection 'data3' does not match port width (4) of module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-689] width (1) of port connection 'data4' does not match port width (4) of module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-689] width (1) of port connection 'data5' does not match port width (4) of module 'CPU' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'LightShow' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:22]
+WARNING: [Synth 8-567] referenced signal 'data_1' should be on the sensitivity list [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:38]
+WARNING: [Synth 8-567] referenced signal 'data_2' should be on the sensitivity list [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:38]
+WARNING: [Synth 8-567] referenced signal 'data_3' should be on the sensitivity list [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:38]
+WARNING: [Synth 8-567] referenced signal 'data_4' should be on the sensitivity list [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:38]
+WARNING: [Synth 8-567] referenced signal 'data_5' should be on the sensitivity list [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'LightShow' (21#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'top' (22#1) [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design Forward_Unit has unconnected port ME_regS[1]
+WARNING: [Synth 8-3331] design Forward_Unit has unconnected port ME_regS[0]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[31]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[30]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[29]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[28]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[27]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[26]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[25]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[24]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[23]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[22]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[21]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[20]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[19]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[18]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[17]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[16]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[15]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[14]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[13]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[12]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[11]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[10]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[9]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[8]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[7]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[6]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[5]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[4]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[3]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[2]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[1]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port WB_rf_d2[0]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[31]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[30]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[29]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[28]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[27]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[26]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[25]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[24]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[23]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[22]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[21]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[20]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[19]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[18]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[17]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[16]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[15]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[14]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[13]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[12]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[11]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[10]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[9]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[8]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[7]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[6]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[5]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[4]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[3]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[2]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[1]
+WARNING: [Synth 8-3331] design ME_WB has unconnected port rf_d2[0]
+WARNING: [Synth 8-3331] design ID_EX has unconnected port rst
+WARNING: [Synth 8-3331] design ID_EX has unconnected port halt
+WARNING: [Synth 8-3331] design IF_ID has unconnected port rst
+WARNING: [Synth 8-3331] design DataMem has unconnected port rst
+WARNING: [Synth 8-3331] design PC has unconnected port br
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 937.199 ; gain = 310.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 937.199 ; gain = 310.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 937.199 ; gain = 310.461
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 937.199 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem/instruction_mem_in_context.xdc] for cell 'cpu/insm/my_insmem'
+Finished Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem/instruction_mem_in_context.xdc] for cell 'cpu/insm/my_insmem'
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1071.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1071.977 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1071.977 ; gain = 445.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1071.977 ; gain = 445.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpu/insm/my_insmem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1071.977 ; gain = 445.238
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'is_bge_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'regS_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUop_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWr_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrc_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'RegW_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_d1_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_d2_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'rf_d_reg' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1071.977 ; gain = 445.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 303   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 3     
+	   6 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+	   8 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module InsMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module Imm_gen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module ALU_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module sr1_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module sr2_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module DataMem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 256   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module RF_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module PC_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module EX_ME 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module ME_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Forward_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module CPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LightShow 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port o_px[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_px[6] driven by constant 0
+WARNING: [Synth 8-3331] design DataMem has unconnected port rst
+INFO: [Synth 8-3886] merging instance 'cpu/ifid/ID_PC_reg[0]' (FDE) to 'cpu/ifid/ID_PC4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_PC_reg[0]' (FD) to 'cpu/idex/EX_PC4_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/con/ALUop_reg[3] )
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[31]' (LD) to 'cpu/img/imm_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[30]' (LD) to 'cpu/img/imm_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[29]' (LD) to 'cpu/img/imm_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[28]' (LD) to 'cpu/img/imm_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[27]' (LD) to 'cpu/img/imm_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[26]' (LD) to 'cpu/img/imm_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[25]' (LD) to 'cpu/img/imm_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[24]' (LD) to 'cpu/img/imm_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[23]' (LD) to 'cpu/img/imm_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[22]' (LD) to 'cpu/img/imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/img/imm_reg[21]' (LD) to 'cpu/img/imm_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[31]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[30]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[29]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[28]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[27]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[26]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[25]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[24]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[23]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[22]' (FD) to 'cpu/idex/EX_imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/idex/EX_imm_reg[21]' (FD) to 'cpu/idex/EX_imm_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/idex/EX_ALUop_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (cpu/con/ALUop_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/alu/res_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/rf/regF_reg[0][10] )
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s1m/alu_d1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/s2m/alu_d2_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:22 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | cpu/mewb/WB_PC_reg[31] | 3      | 31    | NO           | NO                 | YES               | 31     | 0       | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |instruction_mem |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |instruction_mem |     1|
+|2     |BUFG            |     2|
+|3     |CARRY4          |    49|
+|4     |LUT1            |     8|
+|5     |LUT2            |   148|
+|6     |LUT3            |   134|
+|7     |LUT4            |    80|
+|8     |LUT5            |   313|
+|9     |LUT6            |  3110|
+|10    |MUXF7           |  1376|
+|11    |MUXF8           |   672|
+|12    |SRL16E          |    31|
+|13    |FDRE            |  9806|
+|14    |FDSE            |     2|
+|15    |LD              |    53|
+|16    |LDC             |    11|
+|17    |IBUF            |     2|
+|18    |OBUF            |    15|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            | 15844|
+|2     |  cpu    |CPU         | 15794|
+|3     |    alu  |ALU         |    20|
+|4     |    con  |ControlUnit |    11|
+|5     |    dm   |DataMem     | 12001|
+|6     |    exme |EX_ME       |   568|
+|7     |    idex |ID_EX       |   701|
+|8     |    ifid |IF_ID       |   223|
+|9     |    img  |Imm_gen     |    21|
+|10    |    insm |InsMem      |    74|
+|11    |    mewb |ME_WB       |   139|
+|12    |    pc1  |PC          |    34|
+|13    |    pcm  |PC_mux      |    50|
+|14    |    rf   |RegFile     |  1888|
+|15    |    rf_m |RF_mux      |    64|
+|16    |  ls     |LightShow   |    31|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1446.102 ; gain = 819.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 113 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:26 . Memory (MB): peak = 1446.102 ; gain = 684.586
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1446.102 ; gain = 819.363
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1446.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1446.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LD => LDCE: 53 instances
+  LDC => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:34 . Memory (MB): peak = 1446.102 ; gain = 1108.820
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1446.102 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 16:44:34 2023...

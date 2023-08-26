@@ -24,7 +24,12 @@ module DataMem(
     input clk, rst, we,
     input [7:0] addr, //7改为9
     input [31:0] wd,
-    output [31:0] r1
+    output [31:0] r1,
+    output [3:0] data1,
+    output [3:0] data2,
+    output [3:0] data3,
+    output [3:0] data4,
+    output [3:0] data5
 );
 
 //dist_mem_gen_1 mem(
@@ -44,6 +49,11 @@ initial begin
 end
 
 assign r1 = dmem[addr];
+assign data1 = dmem[0][3:0];
+assign data2 = dmem[1][3:0];
+assign data3 = dmem[2][3:0];
+assign data4 = dmem[3][3:0];
+assign data5 = dmem[4][3:0];
 
 always @(posedge clk) begin
     if (we) begin
