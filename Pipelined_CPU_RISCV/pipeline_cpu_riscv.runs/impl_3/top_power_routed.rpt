@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Aug 26 16:46:40 2023
+| Date             : Sat Aug 26 23:51:18 2023
 | Host             : LAPTOP-ZMX running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 16.144 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 15.753                           |
-| Device Static (W)        | 0.391                            |
-| Effective TJA (C/W)      | 4.6                              |
-| Max Ambient (C)          | 11.3                             |
-| Junction Temperature (C) | 98.7                             |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 9.590        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 9.408        |
+| Device Static (W)        | 0.182        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 41.2         |
+| Junction Temperature (C) | 68.8         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     0.806 |    16739 |       --- |             --- |
-|   LUT as Logic           |     0.409 |     3699 |     63400 |            5.83 |
+| Slice Logic              |     0.949 |    16835 |       --- |             --- |
+|   LUT as Logic           |     0.559 |     3749 |     63400 |            5.91 |
 |   LUT as Shift Register  |     0.152 |       16 |     19000 |            0.08 |
-|   CARRY4                 |     0.124 |       49 |     15850 |            0.31 |
-|   Register               |     0.115 |     9872 |    126800 |            7.79 |
+|   CARRY4                 |     0.119 |       52 |     15850 |            0.33 |
+|   Register               |     0.113 |     9901 |    126800 |            7.81 |
 |   BUFG                   |     0.006 |        2 |        32 |            6.25 |
 |   Others                 |     0.000 |       22 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |     2432 |     63400 |            3.84 |
+|   F7/F8 Muxes            |     0.000 |     2433 |     63400 |            3.84 |
 |   LUT as Distributed RAM |     0.000 |      512 |     19000 |            2.69 |
-| Signals                  |     7.473 |    11561 |       --- |             --- |
-| I/O                      |     7.474 |       17 |       210 |            8.10 |
-| Static Power             |     0.391 |          |           |                 |
-| Total                    |    16.144 |          |           |                 |
+| Signals                  |     7.642 |    11662 |       --- |             --- |
+| I/O                      |     0.817 |       24 |       210 |           11.43 |
+| Static Power             |     0.182 |          |           |                 |
+| Total                    |     9.590 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +74,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     8.530 |       8.283 |      0.247 |
-| Vccaux    |       1.800 |     0.323 |       0.274 |      0.049 |
-| Vcco33    |       3.300 |     2.118 |       2.114 |      0.004 |
+| Vccint    |       1.000 |     8.678 |       8.595 |      0.083 |
+| Vccaux    |       1.800 |     0.056 |       0.030 |      0.027 |
+| Vcco33    |       3.300 |     0.234 |       0.230 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.007 |       0.000 |      0.007 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -141,19 +141,19 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| top             |    15.753 |
-|   cpu           |     7.550 |
-|     dm          |     0.006 |
+| top             |     9.408 |
+|   cpu           |     7.655 |
+|     dm          |     0.012 |
 |     exme        |     0.152 |
-|     idex        |     0.296 |
-|     ifid        |     0.247 |
-|     insm        |     0.081 |
-|       my_insmem |     0.081 |
-|     mewb        |     0.134 |
-|     pc1         |     6.229 |
-|     pcm         |     0.364 |
-|     rf_m        |     0.043 |
-|   ls            |     0.116 |
+|     idex        |     0.319 |
+|     ifid        |     0.259 |
+|     insm        |     0.080 |
+|       my_insmem |     0.080 |
+|     mewb        |     0.140 |
+|     pc1         |     6.266 |
+|     pcm         |     0.377 |
+|     rf_m        |     0.051 |
+|   ls            |     0.305 |
 +-----------------+-----------+
 
 
