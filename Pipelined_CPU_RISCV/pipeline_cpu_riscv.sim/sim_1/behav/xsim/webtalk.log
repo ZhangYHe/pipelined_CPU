@@ -2,12 +2,12 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Aug 25 16:39:50 2023
-# Process ID: 3576
-# Current directory: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xsim.dir/CPU_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sat Aug 26 14:50:14 2023
+# Process ID: 23832
+# Current directory: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xsim.dir/CPU_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Aug 25 16:39:51 2023...
+source D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Aug 26 14:50:15 2023...

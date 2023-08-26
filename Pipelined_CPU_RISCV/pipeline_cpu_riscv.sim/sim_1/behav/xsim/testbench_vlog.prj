@@ -1,5 +1,8 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog dist_mem_gen_v8_0_13  --include "../../../../pipeline_cpu_riscv.srcs/sources_1/new" \
+"../../../../pipeline_cpu_riscv.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" \
+
+verilog xil_defaultlib  --include "../../../../pipeline_cpu_riscv.srcs/sources_1/new" \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/sim/instruction_mem.v" \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/new/ALU.v" \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v" \
@@ -20,7 +23,7 @@ verilog xil_defaultlib  \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" \
 "../../../../pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" \
-"../../../../pipeline_cpu_riscv.srcs/sources_1/new/testbench.v" \
+"../../../../pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

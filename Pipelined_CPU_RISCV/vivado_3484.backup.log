@@ -1,0 +1,545 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug 26 14:45:26 2023
+# Process ID: 3484
+# Current directory: D:/Pipelined_CPU_RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20576 D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
+# Log file: D:/Pipelined_CPU_RISCV/vivado.log
+# Journal file: D:/Pipelined_CPU_RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
+INFO: [Project 1-313] Project file moved from 'D:/桌面/本科课程/计算机组成与体系结构/计组小学期/pipelined_CPU/Pipelined_CPU_RISCV' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/sim/instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:137]
+INFO: [VRFC 10-2458] undeclared symbol io_addr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:166]
+INFO: [VRFC 10-2458] undeclared symbol io_dout, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:167]
+INFO: [VRFC 10-2458] undeclared symbol io_we, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:168]
+INFO: [VRFC 10-2458] undeclared symbol rf_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:170]
+INFO: [VRFC 10-2458] undeclared symbol pc, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:174]
+INFO: [VRFC 10-2458] undeclared symbol pcd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:175]
+INFO: [VRFC 10-2458] undeclared symbol ir, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:176]
+INFO: [VRFC 10-2458] undeclared symbol pcin, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:177]
+INFO: [VRFC 10-2458] undeclared symbol pce, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:180]
+INFO: [VRFC 10-2458] undeclared symbol a, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:181]
+INFO: [VRFC 10-2458] undeclared symbol b, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:182]
+INFO: [VRFC 10-2458] undeclared symbol imm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:183]
+INFO: [VRFC 10-2458] undeclared symbol rd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:184]
+INFO: [VRFC 10-2458] undeclared symbol ctrl, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:185]
+INFO: [VRFC 10-2458] undeclared symbol y, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:188]
+INFO: [VRFC 10-2458] undeclared symbol bm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:189]
+INFO: [VRFC 10-2458] undeclared symbol rdm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:190]
+INFO: [VRFC 10-2458] undeclared symbol ctrlm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:191]
+INFO: [VRFC 10-2458] undeclared symbol yw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:195]
+INFO: [VRFC 10-2458] undeclared symbol mdr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:196]
+INFO: [VRFC 10-2458] undeclared symbol rdw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:197]
+INFO: [VRFC 10-2458] undeclared symbol ctrlw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:198]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_ME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ME_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr2_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ins_d' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:137]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Imm_gen
+Compiling module xil_defaultlib.ALU_mux
+Compiling module xil_defaultlib.sr1_mux
+Compiling module xil_defaultlib.sr2_mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.RF_mux
+Compiling module xil_defaultlib.PC_mux
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX_ME
+Compiling module xil_defaultlib.ME_WB
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Forward_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 894.516 ; gain = 35.523
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 894.516 ; gain = 35.523
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/sim/instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+INFO: [VRFC 10-2458] undeclared symbol io_addr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:163]
+INFO: [VRFC 10-2458] undeclared symbol io_dout, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:164]
+INFO: [VRFC 10-2458] undeclared symbol io_we, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:165]
+INFO: [VRFC 10-2458] undeclared symbol rf_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:167]
+INFO: [VRFC 10-2458] undeclared symbol pc, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:171]
+INFO: [VRFC 10-2458] undeclared symbol pcd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:172]
+INFO: [VRFC 10-2458] undeclared symbol ir, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:173]
+INFO: [VRFC 10-2458] undeclared symbol pcin, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:174]
+INFO: [VRFC 10-2458] undeclared symbol pce, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:177]
+INFO: [VRFC 10-2458] undeclared symbol a, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:178]
+INFO: [VRFC 10-2458] undeclared symbol b, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:179]
+INFO: [VRFC 10-2458] undeclared symbol imm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:180]
+INFO: [VRFC 10-2458] undeclared symbol rd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:181]
+INFO: [VRFC 10-2458] undeclared symbol ctrl, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:182]
+INFO: [VRFC 10-2458] undeclared symbol y, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:185]
+INFO: [VRFC 10-2458] undeclared symbol bm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:186]
+INFO: [VRFC 10-2458] undeclared symbol rdm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:187]
+INFO: [VRFC 10-2458] undeclared symbol ctrlm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:188]
+INFO: [VRFC 10-2458] undeclared symbol yw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:192]
+INFO: [VRFC 10-2458] undeclared symbol mdr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:193]
+INFO: [VRFC 10-2458] undeclared symbol rdw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:194]
+INFO: [VRFC 10-2458] undeclared symbol ctrlw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_ME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ME_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr2_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'io_din' on this module [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/sim/instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+INFO: [VRFC 10-2458] undeclared symbol io_addr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:163]
+INFO: [VRFC 10-2458] undeclared symbol io_dout, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:164]
+INFO: [VRFC 10-2458] undeclared symbol io_we, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:165]
+INFO: [VRFC 10-2458] undeclared symbol rf_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:167]
+INFO: [VRFC 10-2458] undeclared symbol pc, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:171]
+INFO: [VRFC 10-2458] undeclared symbol pcd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:172]
+INFO: [VRFC 10-2458] undeclared symbol ir, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:173]
+INFO: [VRFC 10-2458] undeclared symbol pcin, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:174]
+INFO: [VRFC 10-2458] undeclared symbol pce, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:177]
+INFO: [VRFC 10-2458] undeclared symbol a, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:178]
+INFO: [VRFC 10-2458] undeclared symbol b, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:179]
+INFO: [VRFC 10-2458] undeclared symbol imm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:180]
+INFO: [VRFC 10-2458] undeclared symbol rd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:181]
+INFO: [VRFC 10-2458] undeclared symbol ctrl, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:182]
+INFO: [VRFC 10-2458] undeclared symbol y, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:185]
+INFO: [VRFC 10-2458] undeclared symbol bm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:186]
+INFO: [VRFC 10-2458] undeclared symbol rdm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:187]
+INFO: [VRFC 10-2458] undeclared symbol ctrlm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:188]
+INFO: [VRFC 10-2458] undeclared symbol yw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:192]
+INFO: [VRFC 10-2458] undeclared symbol mdr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:193]
+INFO: [VRFC 10-2458] undeclared symbol rdw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:194]
+INFO: [VRFC 10-2458] undeclared symbol ctrlw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_ME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ME_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr2_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ins_d' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Imm_gen
+Compiling module xil_defaultlib.ALU_mux
+Compiling module xil_defaultlib.sr1_mux
+Compiling module xil_defaultlib.sr2_mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.RF_mux
+Compiling module xil_defaultlib.PC_mux
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX_ME
+Compiling module xil_defaultlib.ME_WB
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Forward_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
+WARNING: Simulation object /testbench/io_din was not found in the design.
+WARNING: Simulation object /testbench/cpu/io_din was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 910.074 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 910.074 ; gain = 0.000
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ins_d' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 955.309 ; gain = 0.000
+run 10 us
+save_wave_config {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run instruction_mem_synth_1
+launch_runs synth_1 -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_mem'...
+[Sat Aug 26 14:57:06 2023] Launched instruction_mem_synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/runme.log
+[Sat Aug 26 14:57:06 2023] Launched synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1209.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1295.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1420.930 ; gain = 450.930
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.srcs\sources_1\new\CPU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.srcs\sources_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+create_run synth_2 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7k70tfbv676-1
+current_run [get_runs synth_2]
+set_property part xc7a100tcsg324-1 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_1' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'dist_mem_gen_1' do not match.
+WARNING: [IP_Flow 19-2162] IP 'instruction_mem' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'instruction_mem' do not match.
+current_run [get_runs synth_1]
+reset_run instruction_mem_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [Project 1-577] IP run instruction_mem_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+
+WARNING: [Project 1-576] IP 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci' in run instruction_mem_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Sat Aug 26 15:04:17 2023] Launched instruction_mem_synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/runme.log
+[Sat Aug 26 15:04:17 2023] Launched synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2123.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2139.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 15:08:19 2023...

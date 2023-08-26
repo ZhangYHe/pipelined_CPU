@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Aug 25 14:20:06 2023
+-- Date        : Fri Aug 25 14:20:05 2023
 -- Host        : LAPTOP-ZMX running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               D:/VivadoProjects/ricsv_pipeline_0824/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top instruction_mem -prefix
+--               instruction_mem_ instruction_mem_sim_netlist.vhdl
 -- Design      : instruction_mem
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity instruction_mem_spram is
     a : in STD_LOGIC_VECTOR ( 9 downto 0 );
     we : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of instruction_mem_spram : entity is "spram";
 end instruction_mem_spram;
 
 architecture STRUCTURE of instruction_mem_spram is
@@ -3492,8 +3490,6 @@ entity instruction_mem_dist_mem_gen_v8_0_13_synth is
     a : in STD_LOGIC_VECTOR ( 9 downto 0 );
     we : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of instruction_mem_dist_mem_gen_v8_0_13_synth : entity is "dist_mem_gen_v8_0_13_synth";
 end instruction_mem_dist_mem_gen_v8_0_13_synth;
 
 architecture STRUCTURE of instruction_mem_dist_mem_gen_v8_0_13_synth is
@@ -3595,8 +3591,6 @@ entity instruction_mem_dist_mem_gen_v8_0_13 is
   attribute C_SYNC_ENABLE of instruction_mem_dist_mem_gen_v8_0_13 : entity is 1;
   attribute C_WIDTH : integer;
   attribute C_WIDTH of instruction_mem_dist_mem_gen_v8_0_13 : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of instruction_mem_dist_mem_gen_v8_0_13 : entity is "dist_mem_gen_v8_0_13";
 end instruction_mem_dist_mem_gen_v8_0_13;
 
 architecture STRUCTURE of instruction_mem_dist_mem_gen_v8_0_13 is
