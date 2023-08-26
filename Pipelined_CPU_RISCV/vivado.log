@@ -289,3 +289,792 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/dist_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/data_mem.coe'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/instruction_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/sim/instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:139]
+INFO: [VRFC 10-2458] undeclared symbol io_addr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:168]
+INFO: [VRFC 10-2458] undeclared symbol io_dout, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:169]
+INFO: [VRFC 10-2458] undeclared symbol io_we, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:170]
+INFO: [VRFC 10-2458] undeclared symbol rf_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:172]
+INFO: [VRFC 10-2458] undeclared symbol pc, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:176]
+INFO: [VRFC 10-2458] undeclared symbol pcd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:177]
+INFO: [VRFC 10-2458] undeclared symbol ir, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:178]
+INFO: [VRFC 10-2458] undeclared symbol pcin, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:179]
+INFO: [VRFC 10-2458] undeclared symbol pce, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:182]
+INFO: [VRFC 10-2458] undeclared symbol a, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:183]
+INFO: [VRFC 10-2458] undeclared symbol b, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:184]
+INFO: [VRFC 10-2458] undeclared symbol imm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:185]
+INFO: [VRFC 10-2458] undeclared symbol rd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:186]
+INFO: [VRFC 10-2458] undeclared symbol ctrl, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:187]
+INFO: [VRFC 10-2458] undeclared symbol y, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:190]
+INFO: [VRFC 10-2458] undeclared symbol bm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:191]
+INFO: [VRFC 10-2458] undeclared symbol rdm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:192]
+INFO: [VRFC 10-2458] undeclared symbol ctrlm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:193]
+INFO: [VRFC 10-2458] undeclared symbol yw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:197]
+INFO: [VRFC 10-2458] undeclared symbol mdr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:198]
+INFO: [VRFC 10-2458] undeclared symbol rdw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:199]
+INFO: [VRFC 10-2458] undeclared symbol ctrlw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_ME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ME_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr2_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+"xelab -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6341679d845048749a074a93fb3d7cb7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'ins_d' [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:139]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Imm_gen
+Compiling module xil_defaultlib.ALU_mux
+Compiling module xil_defaultlib.sr1_mux
+Compiling module xil_defaultlib.sr2_mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.RF_mux
+Compiling module xil_defaultlib.PC_mux
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX_ME
+Compiling module xil_defaultlib.ME_WB
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Forward_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3892.762 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 3892.762 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE2_WIDTH {4} CONFIG.C_PROBE1_WIDTH {4} CONFIG.C_PROBE0_WIDTH {4} CONFIG.C_DATA_DEPTH {4096} CONFIG.C_NUM_OF_PROBES {3}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 14 ila_0_synth_1
+[Sat Aug 26 20:47:22 2023] Launched ila_0_synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/sim_scripts -ip_user_files_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files -ipstatic_source_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/compile_simlib/modelsim} {questa=D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/compile_simlib/questa} {riviera=D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/compile_simlib/riviera} {activehdl=D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run instruction_mem_synth_1
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+WARNING: [Project 1-577] IP run instruction_mem_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+
+WARNING: [Project 1-576] IP 'D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci' in run instruction_mem_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Sat Aug 26 20:51:59 2023] Launched instruction_mem_synth_1...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/runme.log
+[Sat Aug 26 20:51:59 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_design
+open_run synth_5 -name synth_5
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 3892.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2227 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3892.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3892.762 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3892.762 ; gain = 0.000
+[Sat Aug 26 20:55:17 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 21:01:43 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 21:03:45 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {data1} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:10:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:10:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:13:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:13:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:15:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:15:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:15:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:15:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:20:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:20:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:20:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:20:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:20:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:20:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:20:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:20:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:20:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:20:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 21:21:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 21:21:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/tb_top.v w ]
+add_files -fileset sim_1 D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/tb_top.v
+update_compile_order -fileset sim_1
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 22:05:06 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 22:07:09 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 22:11:05 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+close_design
+open_run synth_5 -name synth_5
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.075 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+place_ports rst_n P15
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+save_constraints
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 4824.758 ; gain = 0.000
+[Sat Aug 26 22:16:52 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 22:33:32 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+close_design
+open_run synth_5 -name synth_5
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+startgroup
+set_property package_pin "" [get_ports [list  {o_led[6]}]]
+place_ports {o_led[0]} B2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {o_led[5]}]]
+place_ports {o_led[1]} B3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {o_led[4]}]]
+place_ports {o_led[2]} A1
+endgroup
+place_ports {o_led[4]} A3
+place_ports {o_led[5]} A4
+place_ports {o_led[6]} B4
+save_constraints
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 4824.758 ; gain = 0.000
+[Sat Aug 26 22:43:42 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 22:48:35 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+close_design
+open_run synth_5 -name synth_5
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'your_instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2300 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 168 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 40 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4824.758 ; gain = 0.000
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 4824.758 ; gain = 0.000
+[Sat Aug 26 22:51:03 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-26 22:53:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-26 22:53:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 22:55:20 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 22:58:00 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 23:14:08 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+close_design
+open_run synth_5 -name synth_5
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp' for cell 'cpu/insm/my_insmem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'halt'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[6]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[5]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[4]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[3]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[2]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[1]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[0]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[3]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[2]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[1]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[0]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[4]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[5]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_led[6]'. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4824.758 ; gain = 0.000
+set_property IOSTANDARD LVCMOS33 [get_ports [list {o_led_1[6]} {o_led_1[5]} {o_led_1[4]} {o_led_1[3]} {o_led_1[2]} {o_led_1[1]} {o_led_1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {o_led_2[6]} {o_led_2[5]} {o_led_2[4]} {o_led_2[3]} {o_led_2[2]} {o_led_2[1]} {o_led_2[0]}]]
+set_property package_pin "" [get_ports [list  {o_led_1[6]}]]
+place_ports {o_led_1[0]} B2
+place_ports {o_led_1[1]} B3
+place_ports {o_led_1[2]} A1
+place_ports {o_led_1[3]} B1
+place_ports {o_led_1[4]} A3
+place_ports {o_led_1[5]} A4
+place_ports {o_led_1[6]} B4
+place_ports {o_led_2[0]} D2
+place_ports {o_led_2[1]} E2
+place_ports {o_led_2[2]} F3
+place_ports {o_led_2[3]} F4
+place_ports {o_led_2[4]} D3
+place_ports {o_led_2[5]} E3
+save_constraints
+place_ports {o_led_2[6]} D4
+save_constraints
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4824.758 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 4824.758 ; gain = 0.000
+[Sat Aug 26 23:19:09 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 23:26:15 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 23:28:11 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+reset_run impl_3 -prev_step 
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+[Sat Aug 26 23:32:35 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 23:35:07 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 23:37:07 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_5
+launch_runs synth_5 -jobs 14
+[Sat Aug 26 23:42:31 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 23:45:03 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_5
+launch_runs impl_3 -jobs 14
+WARNING: [Project 1-478] Design 'synth_5' is stale and will not be used when launching 'impl_3'
+[Sat Aug 26 23:48:12 2023] Launched synth_5...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/runme.log
+[Sat Aug 26 23:48:12 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+launch_runs impl_3 -to_step write_bitstream -jobs 14
+[Sat Aug 26 23:51:29 2023] Launched impl_3...
+Run output will be captured here: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 23:55:04 2023...
