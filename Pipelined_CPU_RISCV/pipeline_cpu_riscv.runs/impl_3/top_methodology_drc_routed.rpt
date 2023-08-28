@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Aug 26 23:51:16 2023
+| Date         : Sun Aug 27 23:13:25 2023
 | Host         : LAPTOP-ZMX running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -20,17 +20,18 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_top
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1077
-+-----------+------------------+------------------------------+------------+
-| Rule      | Severity         | Description                  | Violations |
-+-----------+------------------+------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 1000       |
-| LUTAR-1   | Warning          | LUT drives async reset alert | 9          |
-| TIMING-20 | Warning          | Non-clocked latch            | 68         |
-+-----------+------------------+------------------------------+------------+
+             Violations found: 1078
++-----------+------------------+-------------------------------------------+------------+
+| Rule      | Severity         | Description                               | Violations |
++-----------+------------------+-------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell               | 1000       |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert              | 9          |
+| TIMING-20 | Warning          | Non-clocked latch                         | 68         |
++-----------+------------------+-------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -5032,6 +5033,11 @@ Related violations: <none>
 TIMING-17#1000 Critical Warning
 Non-clocked sequential cell  
 The clock pin cpu/dm/dmem_reg[128][16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clk_50m/inst/clk_in1 is created on an inappropriate internal pin clk_50m/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
 Related violations: <none>
 
 LUTAR-1#1 Warning

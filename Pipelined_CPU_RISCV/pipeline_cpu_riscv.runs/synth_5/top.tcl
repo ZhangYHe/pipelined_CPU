@@ -17,9 +17,11 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache D:/Pipelined_CPU_RISCV/.Xil/Vivado-21648-LAPTOP-ZMX/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,6 +30,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
 set_property parent.project_path D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
@@ -54,12 +57,20 @@ read_verilog -library xil_defaultlib {
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v
+  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/rs232.v
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v
+  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_rx.v
+  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_tx.v
   D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v
 }
 read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
 set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_ooc.xdc]
+
+read_ip -quiet d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
+set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc]
+set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

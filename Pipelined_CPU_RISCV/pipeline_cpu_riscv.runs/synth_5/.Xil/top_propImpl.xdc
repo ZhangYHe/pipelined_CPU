@@ -83,3 +83,7 @@ set_property src_info {type:XDC file:1 line:70 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN E3 [get_ports {o_led_2[5]}]
 set_property src_info {type:XDC file:1 line:71 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN D4 [get_ports {o_led_2[6]}]
+set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N5 [get_ports rx]
+set_property src_info {type:XDC file:1 line:76 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T4 [get_ports tx]

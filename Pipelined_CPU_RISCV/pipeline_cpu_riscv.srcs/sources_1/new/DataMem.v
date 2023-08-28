@@ -22,9 +22,11 @@
 
 module DataMem(
     input clk, rst, we,
-    input [7:0] addr, //7改为9
+    input [7:0] addr,
+    input [7:0] io_addr, // 8位外设输入地址
     input [31:0] wd,
     output [31:0] r1,
+    output [7:0] io_rd, // 8位外设输出
     output [3:0] data1,
     output [3:0] data2,
     output [3:0] data3,
@@ -39,6 +41,7 @@ module DataMem(
 //  .we(we),    // input wire we
 //  .spo(r1)  // output wire [31 : 0] spo
 //);
+
 reg [31:0] dmem [255:0];
 initial begin 
     dmem[0] <= 32'd3;
@@ -49,6 +52,7 @@ initial begin
 end
 
 assign r1 = dmem[addr];
+assign io_rd = dmem[io_addr][7:0];
 assign data1 = dmem[0][3:0];
 assign data2 = dmem[1][3:0];
 assign data3 = dmem[2][3:0];

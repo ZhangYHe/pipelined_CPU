@@ -69,3 +69,8 @@ set_property PACKAGE_PIN F4 [get_ports {o_led_2[3]}]
 set_property PACKAGE_PIN D3 [get_ports {o_led_2[4]}]
 set_property PACKAGE_PIN E3 [get_ports {o_led_2[5]}]
 set_property PACKAGE_PIN D4 [get_ports {o_led_2[6]}]
+
+set_property PACKAGE_PIN N5 [get_ports rx]
+set_property IOSTANDARD LVCMOS33 [get_ports rx]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+set_property PACKAGE_PIN T4 [get_ports tx]

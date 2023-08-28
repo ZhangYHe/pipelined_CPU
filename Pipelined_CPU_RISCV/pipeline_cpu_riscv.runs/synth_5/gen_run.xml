@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_5" LaunchPart="xc7a100tcsg324-1" LaunchTime="1693064892">
+<GenRun Id="synth_5" LaunchPart="xc7a100tcsg324-1" LaunchTime="1693148910">
   <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
@@ -143,6 +143,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/rs232.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/sr1_mux.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -151,6 +158,20 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/sr2_mux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -217,13 +238,12 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2019">
-      <Desc>Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations.</Desc>
-    </StratHandle>
+    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design">
       <Option Id="ControlSetOptThreshold">1</Option>
       <Option Id="Directive">1</Option>
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="instruction_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_50M"/>
 </GenRun>
