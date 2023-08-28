@@ -28,8 +28,8 @@ parameter CLK_FREQ = 'd50_000_000 //时钟频率
 (
 input wire sys_clk , //系统时钟50MHz
 input wire sys_rst_n , //全局复位
-input wire [7:0] pi_data , //模块输入的8bit数据
- input wire pi_flag , //并行数据有效标志信号
+input wire [7:0] TX_DATA , //模块输入的8bit数据
+input wire pi_flag , //并行数据有效标志信号
 
  output reg tx //串转并后的1bit数据
  );
@@ -94,14 +94,14 @@ input wire [7:0] pi_data , //模块输入的8bit数据
  else if(bit_flag == 1'b1)
  case(bit_cnt)
  0 : tx <= 1'b0;
- 1 : tx <= pi_data[0];
- 2 : tx <= pi_data[1];
- 3 : tx <= pi_data[2];
- 4 : tx <= pi_data[3];
- 5 : tx <= pi_data[4];
- 6 : tx <= pi_data[5];
- 7 : tx <= pi_data[6];
- 8 : tx <= pi_data[7];
+ 1 : tx <= TX_DATA[0];
+ 2 : tx <= TX_DATA[1];
+ 3 : tx <= TX_DATA[2];
+ 4 : tx <= TX_DATA[3];
+ 5 : tx <= TX_DATA[4];
+ 6 : tx <= TX_DATA[5];
+ 7 : tx <= TX_DATA[6];
+ 8 : tx <= TX_DATA[7];
  9 : tx <= 1'b1;
  default : tx <= 1'b1;
  endcase

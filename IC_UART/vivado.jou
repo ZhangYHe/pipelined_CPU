@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Aug 27 13:47:57 2023
+# Process ID: 16820
+# Current directory: D:/GitRepo/pipelined_CPU/IC_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17916 D:\GitRepo\pipelined_CPU\IC_UART\IC_UART.xpr
+# Log file: D:/GitRepo/pipelined_CPU/IC_UART/vivado.log
+# Journal file: D:/GitRepo/pipelined_CPU/IC_UART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/GitRepo/pipelined_CPU/IC_UART/tb_rs232_behav.wcfg
+source tb_rs232.tcl
+run 10 ms

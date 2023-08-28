@@ -18,10 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache D:/Pipelined_CPU_RISCV/.Xil/Vivado-21648-LAPTOP-ZMX/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -67,7 +64,7 @@ read_verilog -library xil_defaultlib {
 read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
 set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_ooc.xdc]
 
-read_ip -quiet d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
+read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
 set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_board.xdc]
 set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc]
 set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_ooc.xdc]

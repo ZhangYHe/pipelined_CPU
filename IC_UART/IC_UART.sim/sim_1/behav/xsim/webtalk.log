@@ -2,12 +2,12 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Aug 25 20:03:56 2023
-# Process ID: 27940
+# Start of session at: Sun Aug 27 15:03:51 2023
+# Process ID: 15632
 # Current directory: D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim/xsim.dir/tb_rs232_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/GitRepo/pipelined_CPU/IC_UART/IC_UART.sim/sim_1/behav/xsim/xsim.dir/tb_rs232_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Aug 25 20:03:57 2023...
+INFO: [Common 17-206] Exiting Webtalk at Sun Aug 27 15:03:52 2023...

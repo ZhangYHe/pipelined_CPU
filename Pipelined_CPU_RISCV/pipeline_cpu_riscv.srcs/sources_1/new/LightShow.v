@@ -33,7 +33,7 @@ module LightShow(
     );
     
 
-    parameter   C_COUNTER_NUM = 100000;    
+    parameter   C_COUNTER_NUM = 500000;    
     //parameter   C_COUNTER_NUM = 10; //计数器峰值
     
     reg  [3:0]  R_temp;             //当前显示的4-bit数据寄存器                

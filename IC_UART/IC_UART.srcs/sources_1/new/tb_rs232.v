@@ -29,7 +29,11 @@ module tb_rs232();
 //reg define
 reg sys_clk;
 reg sys_rst_n;
- reg rx;
+reg rx_en;
+reg tx_en;
+reg rx;
+reg [7:0] RX_DATA;
+reg [7:0] TX_DATA = 8'b1111_1111;
 
  //wire define
  wire tx;
@@ -42,7 +46,10 @@ reg sys_rst_n;
  initial begin
  sys_clk = 1'b1;
  sys_rst_n <= 1'b0;
+ rx_en <= 1'b1;
+ tx_en <= 1'b1;
  rx <= 1'b1;
+//  TX_DATA <= 8'd8;
  #20;
  sys_rst_n <= 1'b1;
  end
@@ -94,7 +101,10 @@ reg sys_rst_n;
  .sys_clk (sys_clk ), //input sys_clk
  .sys_rst_n (sys_rst_n ), //input sys_rst_n
  .rx (rx ), //input rx
-
+ .TX_DATA(TX_DATA),
+ .rx_en(rx_en),
+ .tx_en(tx_en), 
+ .RX_DATA(RX_DAtA),
  .tx (tx ) //output tx
  );
 

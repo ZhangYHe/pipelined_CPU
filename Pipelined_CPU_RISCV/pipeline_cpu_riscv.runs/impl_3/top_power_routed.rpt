@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Aug 27 23:13:29 2023
+| Date             : Mon Aug 28 16:09:49 2023
 | Host             : LAPTOP-ZMX running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.237        |
+| Total On-Chip Power (W)  | 0.236        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.139        |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.024 |        5 |       --- |             --- |
-| Slice Logic              |     0.001 |    17955 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     4284 |     63400 |            6.76 |
+| Clocks                   |     0.023 |        5 |       --- |             --- |
+| Slice Logic              |     0.001 |    17959 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     4286 |     63400 |            6.76 |
 |   LUT as Shift Register  |    <0.001 |       16 |     19000 |            0.08 |
 |   CARRY4                 |    <0.001 |       60 |     15850 |            0.38 |
-|   Register               |    <0.001 |     9944 |    126800 |            7.84 |
+|   Register               |    <0.001 |     9945 |    126800 |            7.84 |
 |   F7/F8 Muxes            |    <0.001 |     2842 |     63400 |            4.48 |
 |   Others                 |     0.000 |       28 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |      512 |     19000 |            2.69 |
 |   BUFG                   |     0.000 |        1 |        32 |            3.13 |
-| Signals                  |     0.007 |    11933 |       --- |             --- |
+| Signals                  |     0.007 |    11931 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |     0.002 |       26 |       210 |           12.38 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.237 |          |           |                 |
+| Total                    |     0.236 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 

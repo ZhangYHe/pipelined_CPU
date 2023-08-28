@@ -60,22 +60,26 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.dcp
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
   set_property parent.project_path D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
   set_property ip_output_repo D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
+  add_files -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.dcp
+  read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
+  read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
+  read_xdc D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc
+  link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

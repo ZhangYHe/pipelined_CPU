@@ -29,7 +29,7 @@ parameter CLK_FREQ = 'd50_000_000 //时钟频率
 input wire sys_clk , //系统时钟50MHz
 input wire sys_rst_n , //全局复位
 input wire rx , //串口接收数据
-output reg [7:0] po_data , //串转并后的8bit数据
+output reg [7:0] RX_DATA , //串转并后的8bit数据
 output reg po_flag //串转并后的数据有效标志信号
 );
 
@@ -125,12 +125,12 @@ always@(posedge sys_clk or negedge sys_rst_n)
  else
  rx_flag <= 1'b0;
 
- //po_data:输出完整的8位有效数据
+ //RX_DATA:输出完整的8位有效数据
  always@(posedge sys_clk or negedge sys_rst_n)
  if(sys_rst_n == 1'b0)
- po_data <= 8'b0;
+ RX_DATA <= 8'b0;
  else if(rx_flag == 1'b1)
- po_data <= rx_data;
+ RX_DATA <= rx_data;
 
  //po_flag:输出数据有效标志（比rx_flag延后一个时钟周期，为了和po_data同步）
  always@(posedge sys_clk or negedge sys_rst_n)

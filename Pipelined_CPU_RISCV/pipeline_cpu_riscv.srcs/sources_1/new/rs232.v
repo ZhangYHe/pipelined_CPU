@@ -43,7 +43,7 @@ module rs232(
      //wire define
      //wire [7:0] RX_DATA;
      wire po_flag;
-     reg pi_flag = 1'b1;
+     //reg pi_flag = 1'b1;
      ////
      //\* Instantiation \//
      ////
@@ -75,7 +75,7 @@ module rs232(
      .sys_clk (sys_clk ), //input sys_clk
      .sys_rst_n (sys_rst_n ), //input sys_rst_n
      .TX_DATA (TX_DATA ), //input [7:0] TX_DATA
-     .pi_flag (pi_flag ), //input pi_flag   // 有问题
+     .pi_flag (po_flag ), //input pi_flag   // 有问题
     
      .tx (tx ) //output tx
      );
