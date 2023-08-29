@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 29 20:42:59 2023
+# Process ID: 3508
+# Current directory: D:/Pipelined_CPU_RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2740 D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
+# Log file: D:/Pipelined_CPU_RISCV/vivado.log
+# Journal file: D:/Pipelined_CPU_RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
+source tb_top.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 ms
+save_wave_config {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg}
+close_sim

@@ -1,72 +1,53 @@
 `timescale 1ns / 1ps
 `include "HeadFile.vh"
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/08/24 15:36:03
-// Design Name: 
-// Module Name: ControlUnit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module ControlUnit(
     input [6:0] opcode,
-    input [6:0] func6,
+    input [6:0] func7,
     input [2:0] func3,
     input halt,
     input stall,
-    output reg jal,
-    output reg branch,
+    output reg is_jal,
+    output reg is_beq,
     output reg is_bge,
-    output reg [1:0] regS,
-    output reg [`ALU_OP_LENGTH - 1:0] ALUop,
-    output reg MemWr,
-    output reg ALUsrc,
-    output reg RegW
+    output reg [1:0] regS, //写回数据选择信号
+    output reg [`ALU_OP_LENGTH - 1:0] ALUop, //ALU操作数
+    output reg memWe, //DataMem写使能
+    output reg ALUsrc, //操作数选择信号
+    output reg regWe //寄存器堆写使能
 );
 
-always@(*) begin
+always @(*) begin
     if(halt||stall) begin
            ALUop = `ALU_OP_ADD;
-           jal = 0;
-           branch = 0;
+           is_jal = 0;
+           is_beq = 0;
            is_bge = 0;
            regS = 0;
-           MemWr = 0;
+           memWe = 0;
            ALUsrc = 0;
-           RegW = 0;
+           regWe = 0;
     end
 
     else begin
     case(opcode) 
         7'b0000000: begin //null 
             ALUop = `ALU_OP_ADD;
-            jal = 0;
-            branch = 0;
+            is_jal = 0;
+            is_beq = 0;
             is_bge = 0;
             regS = 0;
-            MemWr = 0;
+            memWe = 0;
             ALUsrc = 0;
-            RegW = 0;
-       end
+            regWe = 0;
+        end
 
         7'b0110011: begin 
-            if (func6 == 7'b0100000) begin // sub
+            if (func7 == 7'b0100000) begin // sub
                 ALUop = `ALU_OP_SUB;
             end
-            else if (func6 == 7'b0000000) begin
+            else if (func7 == 7'b0000000) begin
                 if (func3 == 3'b000) begin // add
                     ALUop = `ALU_OP_ADD;
                 end
@@ -90,13 +71,13 @@ always@(*) begin
                 end
             end
 
-            jal = 0;
-            branch = 0;
+            is_jal = 0;
+            is_beq = 0;
             is_bge = 0;
             regS = 0;
-            MemWr = 0;
+            memWe = 0;
             ALUsrc = 0;
-            RegW = 1;         
+            regWe = 1;         
         end
 
         7'b0010011: begin
@@ -109,72 +90,67 @@ always@(*) begin
             else if (func3 == 3'b101) begin //srli
                 ALUop = `ALU_OP_SRL;
             end
-            ALUop = 0;
-            jal = 0;
-            branch = 0;
+
+            is_jal = 0;
+            is_beq = 0;
             is_bge = 0;
             regS = 0;
-            MemWr = 0;
+            memWe = 0;
             ALUsrc = 1;
-            RegW = 1;
-       end
+            regWe = 1;
+        end
 
         7'b0000011: begin// lw
-            ALUop = 0;//+
-            jal = 0;
-            branch = 0;
+            ALUop = `ALU_OP_ADD;
+            is_jal = 0;
+            is_beq = 0;
             is_bge = 0;
             regS = 1;
-            MemWr = 0;
+            memWe = 0;
             ALUsrc = 1;
-            RegW = 1;
+            regWe = 1;
         end
 
         7'b0100011: begin // sw
-            ALUop = 0;
-            jal = 0;
-            branch = 0;
+            ALUop = `ALU_OP_ADD;
+            is_jal = 0;
+            is_beq = 0;
             is_bge = 0;
             regS = 0;
-            MemWr = 1;
+            memWe = 1;
             ALUsrc = 1;
-            RegW = 0;
+            regWe = 0;
             
         end
 
         7'b1100011: begin
             if (func3 == 3'b000) begin// beq
-                ALUop = 1;
-                jal = 0;
-                branch = 1;
+                is_beq = 1;
                 is_bge = 0;
-                regS = 2;//PC+4
-                MemWr = 0;
-                ALUsrc = 0;//reg
-                RegW = 0;
             end
             else if (func3 == 3'b101) begin //bge
-                ALUop = 1;
-                jal = 0;
-                branch = 0;
+                is_beq = 0;
                 is_bge = 1;
-                regS = 2;//PC+4
-                MemWr = 0;
-                ALUsrc = 0;//reg
-                RegW = 0;
             end
-       end
+
+            ALUop = `ALU_OP_SUB;
+            is_jal = 0;
+            regS = 2;
+            memWe = 0;
+            ALUsrc = 0;
+            regWe = 0;
+        end
        
-        7'b1101111: begin//jal
-            ALUop = 0;
-            jal = 1;
-            branch = 0;
+        7'b1101111: begin //jal
+            ALUop = `ALU_OP_ADD;
+            is_jal = 1;
+            is_beq = 0;
             is_bge = 0;
-            regS = 2;//PC+4
-            MemWr = 0;
-            ALUsrc = 0;//Imm
-            RegW = 1;
-       end
+            regS = 2;
+            memWe = 0;
+            ALUsrc = 0;
+            regWe = 1;
+        end
     endcase
     end
 end                

@@ -1,45 +1,30 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/08/24 15:15:34
-// Design Name: 
-// Module Name: InsMem
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module InsMem(
-    input clk,we,
+	input clk,we,
     input [31:0] ins_d,
-    input [9:0] addr, //[7:0]æ”¹ä¸º9
-    input flush,//æ¸…ç©ºä¿¡å·
-    output reg [31:0] data//è¾“å‡ºä¿¡å·
+    input [9:0] addr,
+    input flush, //Çå¿ÕĞÅºÅ
+    output reg [31:0] insOut //Êä³öÖ¸Áî
 );
-wire [31:0] temp;
 
+wire [31:0] insTemp;
+
+//IPºË
 instruction_mem my_insmem (
-  .a(addr),      // input wire [9 : 0] a
-  .d(ins_d),      // input wire [31 : 0] d
-  .clk(clk),  // input wire clk
-  .we(we),    // input wire we
-  .spo(temp)  // output wire [31 : 0] spo
+	.a(addr),      // input wire [9 : 0] a
+	.d(ins_d),      // input wire [31 : 0] d
+	.clk(clk),  // input wire clk
+	.we(we),    // input wire we
+	.spo(insTemp)  // output wire [31 : 0] spo
 );
 
-always@(*) begin
-    if(flush) data = 0;
-    else data = temp;
+always @(*) begin
+    if(flush) 
+		insOut = 0;
+    else 
+		insOut = insTemp;
 end
 
 endmodule

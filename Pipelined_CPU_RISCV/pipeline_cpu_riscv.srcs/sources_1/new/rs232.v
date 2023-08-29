@@ -1,83 +1,50 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/08/25 20:00:29
-// Design Name: 
-// Module Name: rs232
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module rs232(
-    input wire sys_clk , //系统时钟50MHz
-    input wire sys_rst_n , //全局复位
-    input wire rx , //串口接收数据
-    input wire [7:0] TX_DATA,
-//    input wire rx_en,
-//    input wire tx_en,
+    input wire clk_50 ,        //系统时钟50MHz
+    input wire rst_n ,      
+    input wire rx ,             //串口串行接收数据
+    input wire [7:0] TX_DATA,   //待发送的数据
     
-    output wire [7:0] RX_DATA,
-    output wire tx //串口发送数据
+    output wire [7:0] RX_DATA,  //接收到的数据
+    output wire tx              //串口串行发送数据
+    );
+
+    parameter UART_BPS = 14'd9600;         //波特率
+    parameter CLK_FREQ = 26'd50_000_000;   //时钟频率
+    
+
+    wire po_flag;              //串转并后数据有效标志位
+
+
+    uart_rx
+    #(
+        .UART_BPS (UART_BPS),         
+        .CLK_FREQ (CLK_FREQ)         
+    )
+    uart_rx_inst
+    (
+        .clk_50 (clk_50 ), 
+        .rst_n (rst_n ), 
+        .rx (rx ), 
+        .RX_DATA (RX_DATA ), 
+        .po_flag (po_flag ) 
     );
     
-    ////
-     //\* Parameter and Internal Signal \//
-     ////
-    
-     //parameter define
-     parameter UART_BPS = 14'd9600; //比特率
-     parameter CLK_FREQ = 26'd50_000_000; //时钟频率
-    
-     //wire define
-     //wire [7:0] RX_DATA;
-     wire po_flag;
-     //reg pi_flag = 1'b1;
-     ////
-     //\* Instantiation \//
-     ////
-
-     //------------------------uart_rx_inst------------------------
-     uart_rx
-     #(
-     .UART_BPS (UART_BPS), //串口波特率
-     .CLK_FREQ (CLK_FREQ) //时钟频率
-     )
-     uart_rx_inst
-     (
-     .sys_clk (sys_clk ), //input sys_clk
-     .sys_rst_n (sys_rst_n ), //input sys_rst_n
-     .rx (rx ), //input rx
-    
-     .RX_DATA (RX_DATA ), //output [7:0] RX_DATA
-     .po_flag (po_flag ) //output po_flag
-     );
-    
-     //------------------------uart_tx_inst------------------------
-     uart_tx
-     #(
-     .UART_BPS (UART_BPS), //串口波特率
-     .CLK_FREQ (CLK_FREQ) //时钟频率
-     )
-     uart_tx_inst
-     (
-     .sys_clk (sys_clk ), //input sys_clk
-     .sys_rst_n (sys_rst_n ), //input sys_rst_n
-     .TX_DATA (TX_DATA ), //input [7:0] TX_DATA
-     .pi_flag (po_flag ), //input pi_flag   // 有问题
-    
-     .tx (tx ) //output tx
-     );
+     
+    uart_tx
+    #(
+        .UART_BPS (UART_BPS), 
+        .CLK_FREQ (CLK_FREQ) 
+    )
+    uart_tx_inst
+    (
+        .clk_50 (clk_50 ), 
+        .rst_n (rst_n ), 
+        .TX_DATA (TX_DATA ), 
+        .pi_flag (po_flag ),      //串口接收数据有效后开始发送  
+        .tx (tx ) 
+    );
     
 endmodule

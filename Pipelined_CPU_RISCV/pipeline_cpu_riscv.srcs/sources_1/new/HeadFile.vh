@@ -1,6 +1,6 @@
 
 
-// ALU
+// ALUop
 `define ALU_OP_LENGTH   4          
 `define ALU_OP_ADD      4'b0000    
 `define ALU_OP_SUB      4'b0001    

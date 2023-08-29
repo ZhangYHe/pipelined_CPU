@@ -10,67 +10,46 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu
 INFO: [VRFC 10-311] analyzing module ALU_mux
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:140]
-INFO: [VRFC 10-2458] undeclared symbol io_dout, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:171]
-INFO: [VRFC 10-2458] undeclared symbol io_we, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:172]
-INFO: [VRFC 10-2458] undeclared symbol rf_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:174]
-INFO: [VRFC 10-2458] undeclared symbol pc, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:178]
-INFO: [VRFC 10-2458] undeclared symbol pcd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:179]
-INFO: [VRFC 10-2458] undeclared symbol ir, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:180]
-INFO: [VRFC 10-2458] undeclared symbol pcin, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:181]
-INFO: [VRFC 10-2458] undeclared symbol pce, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:184]
-INFO: [VRFC 10-2458] undeclared symbol a, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:185]
-INFO: [VRFC 10-2458] undeclared symbol b, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:186]
-INFO: [VRFC 10-2458] undeclared symbol imm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:187]
-INFO: [VRFC 10-2458] undeclared symbol rd, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:188]
-INFO: [VRFC 10-2458] undeclared symbol ctrl, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:189]
-INFO: [VRFC 10-2458] undeclared symbol y, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:192]
-INFO: [VRFC 10-2458] undeclared symbol bm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:193]
-INFO: [VRFC 10-2458] undeclared symbol rdm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:194]
-INFO: [VRFC 10-2458] undeclared symbol ctrlm, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:195]
-INFO: [VRFC 10-2458] undeclared symbol yw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:199]
-INFO: [VRFC 10-2458] undeclared symbol mdr, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:200]
-INFO: [VRFC 10-2458] undeclared symbol rdw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:201]
-INFO: [VRFC 10-2458] undeclared symbol ctrlw, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:202]
+INFO: [VRFC 10-2458] undeclared symbol ins_data, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v:114]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ControlUnit
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DataMem
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EX_ME
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Forward_Unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Hazard_Unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ID_EX
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ForwardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/HazardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardUnit
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-311] analyzing module ImmGen
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module InsMem
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LightShow
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ME_WB
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_EX_ME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_EX_ME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_ME_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ME_WB
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Src1_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Src1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Src2_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Src2_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/WB_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_mux
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/rs232.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rs232
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sr1_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sr2_mux
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:51]
+INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v:29]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module uart_rx
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib

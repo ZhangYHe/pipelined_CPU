@@ -1,41 +1,25 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/08/24 15:12:49
-// Design Name: 
-// Module Name: PC
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module PC(
     input clk,
     input rst,
     input br,
-    input halt,//鍋滈】淇″彿
-    input [31:0] PCin,
-    output reg [31:0] PCout
+    input halt,
+    input [31:0] PC_in,
+    output reg [31:0] PC_out
 );
 initial begin
-    PCout <= 32'h3000;
+    PC_out <= 32'h3000; //初始地址0x3000
 end
 
 always@(posedge clk) begin
-    if(rst) PCout <= 32'h3000;
-    else if(halt) PCout <= PCout;
-    else PCout <= PCin;
+    if(rst) 
+        PC_out <= 32'h3000; //回到初始PC
+    else if(halt) 
+        PC_out <= PC_out; //停顿
+    else 
+        PC_out <= PC_in;
 end
 
 endmodule
