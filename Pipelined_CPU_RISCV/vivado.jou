@@ -2,88 +2,13 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Aug 28 15:26:05 2023
-# Process ID: 10604
-# Current directory: D:/Pipelined_CPU_RISCV
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20176 D:\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
-# Log file: D:/Pipelined_CPU_RISCV/vivado.log
-# Journal file: D:/Pipelined_CPU_RISCV\vivado.jou
-#-----------------------------------------------------------
-start_gui
-open_project D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
+# Start of session at: Tue Aug 29 11:01:54 2023
+# Process ID: 33028
+# Current directory: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14296 D:\GitRepo\pipelined_CPU\Pipelined_CPU_RISCV\pipeline_cpu_riscv.xpr
+# Log file: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/vivado.log
+# Journal file: D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr
 update_compile_order -fileset sources_1
-reset_run instruction_mem_synth_1
-reset_run synth_5
-launch_runs synth_5 -jobs 14
-wait_on_run synth_5
-launch_runs impl_3 -to_step write_bitstream -jobs 14
-wait_on_run impl_3
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_5
-launch_runs synth_5 -jobs 14
-wait_on_run synth_5
-launch_runs impl_3 -to_step write_bitstream -jobs 14
-wait_on_run impl_3
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-launch_simulation
-open_wave_config D:/Pipelined_CPU_RISCV/testbench_behav.wcfg
-source tb_top.tcl
-run 5 ms
-relaunch_sim
-run 5 ms
-run 1 ms
-relaunch_sim
-run 9 ms
-relaunch_sim
-run 9 ms
-reset_run synth_5
-launch_runs synth_5 -jobs 14
-wait_on_run synth_5
-launch_runs impl_3 -to_step write_bitstream -jobs 14
-wait_on_run impl_3
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_5
-launch_runs synth_5 -jobs 14
-wait_on_run synth_5
-launch_runs impl_3 -to_step write_bitstream -jobs 14
-wait_on_run impl_3
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-save_wave_config {D:/Pipelined_CPU_RISCV/testbench_behav.wcfg}
-close_sim
+
+synth_design -rtl -name rtl_1

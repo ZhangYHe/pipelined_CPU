@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc rfile:../pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc id:1 order:EARLY scoped_inst:clk_50m/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc rfile:../pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:d:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc rfile:../pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc id:1 order:EARLY scoped_inst:clk_50m/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc rfile:../pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc id:2} [current_design]
 current_instance clk_50m/inst
 set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.1
