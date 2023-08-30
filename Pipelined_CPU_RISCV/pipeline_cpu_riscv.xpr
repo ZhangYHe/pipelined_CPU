@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr">
+<Project Version="7" Minor="44" Path="D:/桌面/本科课程/计算机组成与体系结构/计组小学期/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6341679d845048749a074a93fb3d7cb7"/>
@@ -265,7 +265,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/testbench.v">
+      <File Path="$PPRDIR/../../../../../../VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sim_1/new/testbench.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
