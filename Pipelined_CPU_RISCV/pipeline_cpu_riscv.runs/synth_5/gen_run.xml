@@ -229,8 +229,8 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design">
-      <Option Id="ControlSetOptThreshold">1</Option>
       <Option Id="Directive">1</Option>
+      <Option Id="ControlSetOptThreshold">1</Option>
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="instruction_mem"/>

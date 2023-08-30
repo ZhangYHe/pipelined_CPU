@@ -32,8 +32,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
-set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_ooc.xdc]
+read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem.xci
+set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -88,32 +88,32 @@ write_checkpoint -force -noxdef instruction_mem.dcp
 create_report "instruction_mem_synth_1_synth_report_utilization_0" "report_utilization -file instruction_mem_utilization_synth.rpt -pb instruction_mem_utilization_synth.pb"
 
 if { [catch {
-  file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem.dcp D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp
+  file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem.dcp D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.v
+  write_verilog -force -mode synth_stub D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.vhdl
+  write_vhdl -force -mode synth_stub D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_sim_netlist.v
+  write_verilog -force -mode funcsim D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -123,32 +123,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem.dcp D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.dcp
+  file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem.dcp D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_stub.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.v
+  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_stub.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_stub.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.vhdl
+  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_stub.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_sim_netlist.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_sim_netlist.v
+  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_sim_netlist.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_sim_netlist.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_sim_netlist.vhdl
+  file rename -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/instruction_mem_synth_1/instruction_mem_sim_netlist.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -157,13 +157,13 @@ if { [catch {
 
 if {[file isdir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem]} {
   catch { 
-    file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem
+    file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.v D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem
   }
 }
 
 if {[file isdir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem]} {
   catch { 
-    file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_stub.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem
+    file copy -force D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_stub.vhdl D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.ip_user_files/ip/instruction_mem
   }
 }
 file delete __synthesis_is_running__
