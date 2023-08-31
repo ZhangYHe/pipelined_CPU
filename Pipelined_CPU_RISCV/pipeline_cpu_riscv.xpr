@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr">
+<Project Version="7" Minor="44" Path="D:/GitRepo/pipelined_CPU/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6341679d845048749a074a93fb3d7cb7"/>
@@ -21,6 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../gitrepo/pipelined_cpu/pipelined_cpu_riscv"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -244,6 +245,9 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../gitrepo/pipelined_cpu/pipelined_cpu_riscv/component.xml">
+        <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
