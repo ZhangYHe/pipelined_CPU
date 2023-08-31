@@ -25,49 +25,54 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
-set_property parent.project_path D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property webtalk.parent_dir D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
+set_property parent.project_path D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
+set_property ip_output_repo d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/inst.coe
-add_files D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/data_mem.coe
-read_verilog D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/HeadFile.vh
+add_files D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/inst.coe
+read_verilog D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/HeadFile.vh
 read_verilog -library xil_defaultlib {
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/EX_ME.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Forward_Unit.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Hazard_Unit.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ID_EX.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/IF_ID.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ME_WB.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RF_mux.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/rs232.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr1_mux.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/sr2_mux.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_rx.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_tx.v
-  D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ALU_mux.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/CPU.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ControlUnit.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/DataMem.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ForwardUnit.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/HazardUnit.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/ImmGen.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/InsMem.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/PC_mux.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_EX_ME.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_ID_EX.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_IF_ID.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/REG_ME_WB.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/RegFile.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Src1_mux.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/Src2_mux.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/WB_mux.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/rs232.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_rx.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/uart_tx.v
+  D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/new/top.v
 }
-read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
-set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem_ooc.xdc]
+read_ip -quiet d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_data.xci
+set_property used_in_synthesis false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_data_ooc.xdc]
 
-read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
-set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc]
-set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_ooc.xdc]
+read_ip -quiet D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_board.xdc]
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xdc]
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M_ooc.xdc]
+
+read_ip -quiet D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem.xci
+set_property used_in_implementation false [get_files -all d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -77,9 +82,11 @@ set_property used_in_implementation false [get_files -all d:/Pipelined_CPU_RISCV
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc
-set_property used_in_implementation false [get_files D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
+read_xdc D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc
+set_property used_in_implementation false [get_files D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

@@ -50,6 +50,7 @@ wire[31:0] alu_mux_data;
 wire zero;
 wire less;
 wire [31:0] res;
+wire OF;
 
 //Src_mux
 wire [31:0] alu_d1, alu_d2;
@@ -116,7 +117,7 @@ ImmGen immgen(ID_ins, immNum);
 ALU_mux alumux(alu_mux_data, EX_imm, EX_ALUsrc, alu_d2);
 Src1_mux src1mux(rs_f1, EX_rd1, ME_res, rf_wd, alu_d1);
 Src2_mux src2mux(rs_f2, EX_rd2, ME_res, rf_wd, alu_mux_data); 
-ALU alu(EX_ALUop, alu_d1, alu_d2, zero, less, res);
+ALU alu(EX_ALUop, alu_d1, alu_d2, zero, less, OF, res);
 DataMem datamem(clk, rst, dm_we, ME_res[9:2], io_addr, ME_rfd, dm_data, io_data, data1, data2, data3, data4, data5); 
 WB_mux wbmux(WB_regS, WB_PC4, WB_dm_rd, WB_res, rf_wd);
 PC_mux pcmux(EX_PC, EX_imm, PCout, br, pcimm, PC4, PC);

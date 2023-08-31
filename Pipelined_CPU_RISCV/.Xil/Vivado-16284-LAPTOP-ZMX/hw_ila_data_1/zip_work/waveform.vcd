@@ -1,0 +1,27 @@
+$date
+        2023-Aug-31 16:00:19
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 4 " data1 [3:0] $end
+$var reg 4 & data2 [3:0] $end
+$var reg 4 * data3 [3:0] $end
+$var reg 1 . _TRIGGER $end
+$var reg 1 / _WINDOW $end
+$var reg 1 0 _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 "
+b10 &
+b11 *
+1.
+1/
+00
+$end

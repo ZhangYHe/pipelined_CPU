@@ -70,15 +70,16 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
-  set_property parent.project_path D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
-  set_property ip_output_repo D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/wt [current_project]
+  set_property parent.project_path D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.xpr [current_project]
+  set_property ip_output_repo D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.dcp
-  read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem/instruction_mem.xci
-  read_ip -quiet D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
-  read_xdc D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.dcp
+  read_ip -quiet d:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/ila_data/ila_data.xci
+  read_ip -quiet D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M/clk_50M.xci
+  read_ip -quiet D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/sources_1/ip/instruction_mem_1/instruction_mem.xci
+  read_xdc D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.srcs/constrs_1/new/control.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -174,7 +175,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force top.mmi }
   write_bitstream -force top.bit 
   catch {write_debug_probes -quiet -force top}

@@ -8,18 +8,21 @@ module ALU(
     input [31:0] src2,
     output zero,
     output less,
+    output reg OF,
     output reg [31:0] aluRes
 );
 
 assign zero = (aluRes == 0)? 1:0;
 assign less = aluRes[31];
+reg CF;
 
 always@(*) begin
+    CF = 0;
     case(aluOp)
        `ALU_OP_ADD:
-            aluRes = src1 + src2;
+            {CF, aluRes} = src1 + src2;
        `ALU_OP_SUB:
-            aluRes = src1 - src2;
+            {CF, aluRes} = src1 - src2;
        `ALU_OP_SLT: 
             aluRes = (src1 < src2) ? 32'h00000001 : 32'h00000000;
        `ALU_OP_AND: 
@@ -33,5 +36,7 @@ always@(*) begin
         `ALU_OP_SRL:
             aluRes = src1 >> src2;
     endcase
+    
+    OF = src1[31] ^ src2[31] ^ CF;
 end
 endmodule

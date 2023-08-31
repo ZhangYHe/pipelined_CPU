@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Aug 28 16:05:03 2023
-# Process ID: 17468
-# Current directory: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5
+# Start of session at: Thu Aug 31 15:52:16 2023
+# Process ID: 23272
+# Current directory: D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.vds
-# Journal file: D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5\vivado.jou
+# Log file: D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5/top.vds
+# Journal file: D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/synth_5\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

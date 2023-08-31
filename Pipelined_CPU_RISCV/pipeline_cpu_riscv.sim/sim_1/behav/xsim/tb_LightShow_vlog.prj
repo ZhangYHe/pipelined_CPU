@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pipeline_cpu_riscv.srcs/sources_1/new" --include "../../../../pipeline_cpu_riscv.srcs/sources_1/ip/clk_50M" \
+"../../../../pipeline_cpu_riscv.srcs/sources_1/new/LightShow.v" \
+"../../../../pipeline_cpu_riscv.srcs/sim_1/new/tb_LightShow.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -13,7 +13,8 @@ module tb_LightShow(
     reg [3:0] d5;
 
     wire [7:0] px;
-    wire [6:0] led ;
+    wire [6:0] led_1;
+    wire [6:0] led_2;
     
     LightShow ls(.clk (clk ),
                  .data_1(d1),
@@ -22,14 +23,15 @@ module tb_LightShow(
                  .data_4(d4),
                  .data_5(d5),
                  .o_px(px),
-                 .o_led(led));
+                 .o_led_1(led_1),
+                 .o_led_2(led_2));
 
     initial begin
 
-        rst = 1;
+        rst = 0;
         clk = 0;
 
-        #30 rst = 0;
+        #30 rst = 1;
 
         d1 = 4'h1;
         d2 = 4'h2;

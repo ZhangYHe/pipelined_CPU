@@ -63,11 +63,11 @@ module top(
         tx
     );
     
-//    ila_0 your_instance_name (
-//	.clk(clk), // input wire clk
-//	.probe0(data1), // input wire [3:0]  probe0  
-//	.probe1(data2), // input wire [3:0]  probe1 
-//	.probe2(data3) // input wire [3:0]  probe2
-//    );
+ila_data ila (
+	.clk(clk), // input wire clk
+	.probe0(data1), // input wire [3:0]  probe0  
+	.probe1(data2), // input wire [3:0]  probe1 
+	.probe2(data3) // input wire [3:0]  probe2
+);
 
 endmodule

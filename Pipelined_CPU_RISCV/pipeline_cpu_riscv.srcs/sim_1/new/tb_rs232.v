@@ -7,7 +7,7 @@ module tb_rs232();
     reg rx_en;
     reg tx_en;
     reg rx;
-    reg [7:0] RX_DATA;
+    wire [7:0] RX_DATA;
     reg [7:0] TX_DATA = 8'b1111_1111;
 
     wire tx;
@@ -69,7 +69,7 @@ module tb_rs232();
         .rst_n (rst_n ), 
         .rx (rx ), 
         .TX_DATA(TX_DATA),
-        .RX_DATA(RX_DAtA),
+        .RX_DATA(RX_DATA),
         .tx (tx ) 
     );
 

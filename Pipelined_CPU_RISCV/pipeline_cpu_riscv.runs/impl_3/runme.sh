@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3'
+HD_PWD='D:/VivadoProjects/Pipelined_CPU_RISCV/pipeline_cpu_riscv.runs/impl_3'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

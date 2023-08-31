@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="27361fs"></ZoomEndTime>
-      <Cursor1Time time="9000fs"></Cursor1Time>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="119651fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+      <NameColumnWidth column_width="141"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
+   <WVObjectSize size="31" />
    <wvobject fp_name="/tb_top/top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -59,11 +59,6 @@
    <wvobject fp_name="/tb_top/top/tx" type="logic">
       <obj_property name="ElementShortName">tx</obj_property>
       <obj_property name="ObjectShortName">tx</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/top/cpu/inst" type="array">
-      <obj_property name="ElementShortName">inst[31:0]</obj_property>
-      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/top/data1" type="array">
       <obj_property name="ElementShortName">data1[3:0]</obj_property>
@@ -114,6 +109,11 @@
       <obj_property name="ElementShortName">po_flag</obj_property>
       <obj_property name="ObjectShortName">po_flag</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/top/cpu/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/top/cpu/datamem/datamem[0]" type="array">
       <obj_property name="ElementShortName">[0][31:0]</obj_property>
       <obj_property name="ObjectShortName">[0][31:0]</obj_property>
@@ -133,5 +133,17 @@
    <wvobject fp_name="/tb_top/top/cpu/datamem/datamem[4]" type="array">
       <obj_property name="ElementShortName">[4][31:0]</obj_property>
       <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top/ls/o_px" type="array">
+      <obj_property name="ElementShortName">o_px[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_px[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top/ls/o_led_1" type="array">
+      <obj_property name="ElementShortName">o_led_1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">o_led_1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/top/ls/o_led_2" type="array">
+      <obj_property name="ElementShortName">o_led_2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">o_led_2[6:0]</obj_property>
    </wvobject>
 </wave_config>
