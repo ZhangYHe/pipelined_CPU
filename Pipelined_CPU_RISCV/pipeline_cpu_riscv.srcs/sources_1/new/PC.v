@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "HeadFile.vh"
 
 
 module PC(
@@ -10,14 +11,14 @@ module PC(
     output reg [31:0] PC_out
 );
 initial begin
-    PC_out <= 32'h3000; //³õÊ¼µØÖ·0x3000
+    PC_out <= `PC_INIT_ADDR; //ï¿½ï¿½Ê¼ï¿½ï¿½Ö·0x3000
 end
 
 always@(posedge clk) begin
     if(rst) 
-        PC_out <= 32'h3000; //»Øµ½³õÊ¼PC
+        PC_out <= `PC_INIT_ADDR; //ï¿½Øµï¿½ï¿½ï¿½Ê¼PC
     else if(halt) 
-        PC_out <= PC_out; //Í£¶Ù
+        PC_out <= PC_out; //Í£ï¿½ï¿½
     else 
         PC_out <= PC_in;
 end

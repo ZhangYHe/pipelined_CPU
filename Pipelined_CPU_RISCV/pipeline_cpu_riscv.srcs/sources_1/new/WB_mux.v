@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "HeadFile.vh"
 
 
 module WB_mux(
@@ -11,9 +12,9 @@ module WB_mux(
 
 always@(*) begin
     case(regS) 
-        0: wbData = res; //ALU½á¹û
-        1: wbData = dm; //Êý¾Ý´æ´¢Æ÷
-        2: wbData = PC; //PC+4
+        `WB_RES: wbData = res; //ALUï¿½ï¿½ï¿½
+        `WB_DM: wbData = dm; //ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½
+        `WB_PC: wbData = PC; //PC+4
     endcase
 end
 

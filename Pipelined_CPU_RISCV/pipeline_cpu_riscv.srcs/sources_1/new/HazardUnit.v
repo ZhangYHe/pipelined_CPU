@@ -3,7 +3,7 @@
 
 module HazardUnit(
     input do_jmp,
-    input ID_EX_memrd,
+    input memrd,
     input [4:0] rs1,rs2,dr,
     output reg halt, //load-use halt
     output reg flush //Ìø×ª Çå¿Õ
@@ -17,7 +17,7 @@ end
 always@(*) begin
     halt = 0; 
     flush = 0;
-    if((ID_EX_memrd && ((dr == rs1) || (dr == rs2)))) begin //load use
+    if((memrd && ((dr == rs1) || (dr == rs2)))) begin //load use
        halt = 1;
     end
     if(do_jmp) begin

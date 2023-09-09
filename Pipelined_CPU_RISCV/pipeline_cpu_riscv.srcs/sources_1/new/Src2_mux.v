@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "HeadFile.vh"
 
 
 module Src2_mux(
@@ -11,9 +12,9 @@ module Src2_mux(
 
 always@(*) begin
     case(f2)
-        2: alu_d2 = ME_res;
-        1: alu_d2 = WB_rfd;
-        0: alu_d2 = rd2;
+        `SRC_RD: alu_d2 = rd2;
+        `SRC_WB: alu_d2 = WB_rfd;
+        `SRC_ME: alu_d2 = ME_res;
     endcase
 end
 

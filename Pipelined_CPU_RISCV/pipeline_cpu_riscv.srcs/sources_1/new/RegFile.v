@@ -19,9 +19,10 @@ wire eq1,eq2; //信号量，写与读寄存器是否相等
 assign eq1 = (r1 == wreg)? 1 : 0;
 assign eq2 = (r2 == wreg)? 1 : 0;
 
-initial 
+initial begin 
 	for(i = 0; i < 32; i = i + 1) 
 		regFile[i] <= 0;
+end
 
 always @(*) begin //写优先
 	if(eq1 && (wreg > 0)) 

@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "HeadFile.vh"
 
 
 module Src1_mux(
@@ -11,9 +12,9 @@ module Src1_mux(
 
 always@(*) begin
     case(f1)
-        0: alu_d1 = rd1;
-        1: alu_d1 = WB_rfd; //WBµÄÊý¾Ý
-        2: alu_d1 = ME_res; //MEM¶Á³öµÄÊý¾Ý   
+        `SRC_RD: alu_d1 = rd1;
+        `SRC_WB: alu_d1 = WB_rfd; //WBï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        `SRC_ME: alu_d1 = ME_res; //MEMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   
     endcase
 end
 
